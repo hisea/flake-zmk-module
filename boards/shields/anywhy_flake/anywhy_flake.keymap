@@ -113,11 +113,11 @@
 
         base {
             bindings = <
-&kp ESC                      &kp N1    &kp N2    &kp N3     &kp N4  &kp N5            &kp N6     &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
-&gresc                       &kp Q     &kp W     &kp E      &kp R   &kp T             &kp Y      &kp U   &kp I      &kp O     &kp P     &kp BSPC
-&mt RCTRL TAB                &kp A     &kp S     &kp D      &kp F   &kp G             &kp H      &kp J   &kp K      &kp L     &kp SEMI  &kp APOS
-&mt LEFT_SHIFT LEFT_BRACKET  &kp Z     &kp X     &kp C      &kp V   &kp B             &kp N      &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RBKT
-                             &kp LGUI  &kp LALT  &kp LCTRL  &mo 1   &mt LGUI SPACE    &kp ENTER  &mo 2   &kp LGUI   &kp LALT  &mo 3
+&kp ESC                      &kp N1    &kp N2    &kp N3     &kp N4  &kp N5             &kp N6     &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
+&gresc                       &kp Q     &kp W     &kp E      &kp R   &kp T              &kp Y      &kp U   &kp I      &kp O     &kp P     &kp BSPC
+&mt RCTRL TAB                &kp A     &kp S     &kp D      &kp F   &kp G              &kp H      &kp J   &kp K      &kp L     &kp SEMI  &kp APOS
+&mt LEFT_SHIFT LEFT_BRACKET  &kp Z     &kp X     &kp C      &kp V   &kp B  &none &none &kp N      &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RBKT
+                             &kp DEL   &kp LGUI  &kp LALT  &kp LCTRL  &mo 1   &mt LGUI SPACE    &kp ENTER  &mo 2   &kp LGUI   &kp LALT  &mo 3
             >;
         };
 
@@ -126,7 +126,7 @@
 &none  &none         &none         &none         &none         &none                &none         &none   &none   &none   &none     &none
 &none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5               &kp NUMBER_6  &kp N7  &kp N8  &kp N9  &kp N0    &none
 &none  &kp LGUI      &kp LALT      &kp LCTRL     &kp LSHFT     &kp C_VOLUME_UP      &kp EQUAL     &kp N4  &kp N5  &kp N6  &kp N0    &none
-&bt0   &bt1          &kp DOWN      &kp UP        &kp RIGHT     &kp C_VOLUME_DOWN    &kp SQT       &kp N1  &kp N2  &kp N3  &kp BSLH  &none
+&bt0   &bt1          &kp DOWN      &kp UP        &kp RIGHT     &kp C_VOLUME_DOWN  &none &none  &kp SQT       &kp N1  &kp N2  &kp N3  &kp BSLH  &none
        &bt2          &trans        &trans        &trans        &none                &none         &trans  &trans  &trans  &trans
             >;
         };
@@ -146,7 +146,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &soft_off       &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans          &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &bt0            &bt1    &bt2    &bt3    &bt4    &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &studio_unlock  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &none &none  &studio_unlock  &trans  &trans  &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans    &trans          &trans  &trans  &trans  &trans
             >;
         };
